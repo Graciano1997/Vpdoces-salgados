@@ -132,12 +132,12 @@ grid-template-areas: "header" "nav"  "main"  "footer";}
 header{padding: 12px;grid-area: header;background-color: white;   color: black; font-weight:bold ;}
 
 /*Styling the Nav*/
-nav{     grid-area: nav;display: flex;justify-content: end;padding: 12px;background-color:white;}
+nav{     grid-area: nav;display: flex;justify-content: end;padding: 12px;background-color:#ff910094;}
 /*rgba(255, 145, 0, 0.185)*/
 nav ul{display: flex;padding-right: 5px;}
 
 nav ul li{padding: 12px;list-style-type: none;}
-nav ul li a {text-decoration: none; font-size: 18px; color:black; font-weight:bolder;}
+nav ul li a {text-decoration: none; font-size: 18px; color:white; font-weight:bolder;}
 nav ul li a:hover { text-decoration: none; font-size: 20px; color:red; font-weight:bolder;
 text-decoration:underline;
 }
