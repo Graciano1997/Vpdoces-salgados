@@ -1,0 +1,414 @@
+/*RESET*/
+*{    }
+/*FIM RESET*/
+
+
+/*VERSAO MOBILE*/
+@media(max-width:703px){
+    /*Header*/
+    header{display: flex; justify-content:center;}
+    /*FIM Header*/
+    /*The mobile NAV*/
+    nav{display: flex;flex-direction: column;}
+    nav ul{    display: flex;padding-right:15px;flex-direction: column;}
+    
+    nav ul li:hover{ background-color: black; border-radius: 15px;}
+        .carrocel{position: relative;    margin-bottom: 15px;}
+        
+        .carrocel img{ width: 100%;height: 100%;}
+    
+
+        .legenda{
+            height: 20%;
+            width: 100%;
+            position: absolute;  
+            bottom: 0px;
+            text-align: start;
+            background-color: red;
+            opacity: 0.5;
+            
+        
+        }
+        
+        
+        
+        .legenda h1{
+            margin-left: 7px;
+            color: white;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            font-size: 15px;
+        }
+        
+#bemvindo{font-size: 25px;}
+
+#vpl{ font-size:30pt;color: red;}
+
+#vpl:hover{
+font-size: 55px;
+ 
+}
+
+/*produto
+.produto{
+    display: grid;
+    margin-bottom: 40px;
+
+}*/
+
+
+#prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prod div{
+    text-align: center;
+ display: block;
+    background-color:pink;
+    
+    margin-bottom: 130px;
+}
+
+.prod div img{
+    
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.prod div:hover{ width: 350px;
+    width: 400px;
+    height: 400px;
+    margin: 8px;
+    border-radius: 15px;
+}
+
+/*fim produto*/
+
+
+/*KITS */
+
+
+#kititems{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#kititems div{
+    
+    display: block;
+    background-color:#ff910094;
+    
+    margin-bottom: 140px;
+}
+
+
+#kititems div img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.email{
+    margin-top: 75px;
+}
+/*FIM KITS */
+
+
+
+    }
+    /*The end of MObile NAV*/
+
+/*FIM  MOBILE*/
+
+/* Styling the Body of Index*/
+.container{margin: 0em;display: grid;grid-template-rows:  repeat(4,auto);
+grid-template-areas: "header" "nav"  "main"  "footer";}
+
+header{padding: 12px;grid-area: header;background-color: white;   color: black; font-weight:bold ;}
+
+/*Styling the Nav*/
+nav{     grid-area: nav;display: flex;justify-content: end;padding: 12px;background-color:white;}
+/*rgba(255, 145, 0, 0.185)*/
+nav ul{display: flex;padding-right: 5px;}
+
+nav ul li{padding: 12px;list-style-type: none;}
+nav ul li a {text-decoration: none; font-size: 18px; color:black; font-weight:bolder;}
+nav ul li a:hover { text-decoration: none; font-size: 20px; color:red; font-weight:bolder;
+text-decoration:underline;
+}
+
+
+/* end Styling the Nav*/
+
+
+/* Styling the MAIN*/
+main{ 
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+}
+
+/*Styling the carrocel
+    justify-content: center;
+    padding:0.5px;
+    background-color:rgba(255, 0, 0, 0.521);
+
+*/
+
+.carrocel{position: relative;background:linear-gradient(white,white,red,);display: flex;}
+.carrocel img{ width: 100%; height: 100%;}
+.legenda{
+    height: 25%;
+    width: 100%;
+    position: absolute;  
+    bottom: 0%;
+    text-align: start;
+    background-color: black;
+    opacity: 0.5;}
+
+.legenda h1{
+    margin-left: 22px;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 80px;}
+
+/*Styling the carrocel*/
+.about{justify-content: center; margin: 35px;}
+
+.about:hover{padding: 40px; border-left: 12px solid black;box-shadow: 3px 3px #ff910094;font-size: 14pt;}
+
+.about h1{ font-size: 25pt;}
+
+.about h1:hover{font-size: 25pt;}
+
+.produto{
+    display: grid;
+    margin-bottom: 40px;
+
+}
+
+.prod{
+    display: flex;
+    flex-grow: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod div{
+    
+margin: 75px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+
+.prod div img{
+    
+    border-radius: 20px;
+    width: inherit;
+    height: inherit;
+}
+
+.prod div:hover{ width: 350px;
+    width: 400px;
+    height: 400px;
+    margin: 8px;
+    border-radius: 15px;
+}
+
+
+.kititems{
+    display: flex;
+    flex-grow: auto;
+    
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 50px;
+    
+}
+
+.kititems div{
+    background-color:#ff910094;
+    margin: 8px;
+}
+.kititems div h1{
+    text-align: center;
+}
+
+.kititems div img{
+    width: 100%;
+    height: 100%;
+}
+/*
+.kititems div:hover{ width: 350px;
+    width: 400px;
+    height: 400px;
+    margin: 8px;
+    border-radius: 15px;
+}
+*/
+
+.kits{
+    display: flex;
+    background-color: red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+#kit{
+    font-size: 45pt;
+    color: red;
+}
+
+.kits div{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.email{
+    display: grid;
+justify-content: center;
+background-color: rgba(248, 189, 61, 0.445);
+padding: 15px;
+
+margin-bottom: 50px;
+}
+#gra{
+    font-size: 28pt;
+    color: red;
+}
+
+.form{
+
+    display: flex;
+justify-content: center;    
+margin-bottom: 15px;
+}
+
+.form input,button{
+    font-size: 25px;
+    text-align: center;
+    margin: 2px;
+}
+
+.form input{
+    border-radius: 5px;    
+}
+
+.form button{
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+}
+
+.testemunhos{
+    margin: 12px;
+    display: grid;
+padding-bottom: 40px;
+}
+
+
+
+.testemunho{
+    display: flex;
+    flex-grow: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.testemunho div{
+    width: 330px;
+    height: 330px;
+    color: black;
+padding: 25px;
+margin: 50px;
+
+}
+
+.testemunho div p{
+    border-left: 4px solid #ff910094;
+    padding: 8px;
+    text-align: justify;
+}
+
+/* end Styling the MAIN*/
+
+
+
+
+
+
+
+
+    /* Styling the footer*/
+footer{ 
+    background-color: whitesmoke;
+    grid-area: footer;
+    padding: 12px;
+    grid-template-rows: repeat(2,auto);
+}
+
+.footer{display: grid;grid-template-columns: 30% 70% ;}
+
+.logo{text-align: start;font-size: 16pt;}
+.logo p{ font-weight: bold;}
+#vp{ font-size:50pt;color: red;}
+.vpl{ font-size:60pt;color: red;}
+#vpe{ font-size:40pt;color: red;}
+
+#vpl{
+     color: red; 
+animation: logoanima 3s infinite ease-in-out;
+}
+
+
+@keyframes logoanima{
+    from{
+transform: rotateX(45deg);
+    }
+    to{
+
+        transform: rotateX(180deg);
+        
+    }
+}
+
+#vpf{  font-size:20pt; color: red;}
+.contato{display: grid;grid-template-columns: repeat(3,auto);align-items: center;}
+
+.contato div{ align-items: center;text-align: center;}
+
+.contato a{text-decoration: none;color: black;font-size: 14pt;}
+
+.contato a:active{
+    text-decoration: none;color: black;font-size: 14pt;
+    text-decoration: none;
+}
+.contato a:visited{
+    text-decoration: none;color: black;font-size: 14pt;
+    }
+
+
+.rights{text-align: center;} .rights p{font-weight: bold;}
+    /* End Styling the footer*/
+
+    /*Testemunho*/
+.testemunho div{
+    text-align: center;
+
+}
+    .testemunho div img{
+        width: 50%;
+        height: 50%;
+        padding: 12px;
+        border-radius:12%;
+        
+    }
