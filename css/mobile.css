@@ -1,5 +1,5 @@
 /*VERSAO MOBILE*/
-@media(max-width:703px){
+@media screen and (max-width:768px){
 
     /*Header*/
     header{display: block; text-align: center;}
