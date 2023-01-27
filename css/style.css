@@ -188,6 +188,8 @@ margin: 75px;
     width: 350px;
     height: 350px;
     text-align: center;
+    
+transition: 3s ease-out;
 }
 
 .prod div img{
@@ -202,6 +204,11 @@ margin: 75px;
     height: 400px;
     margin: 8px;
     border-radius: 15px;
+    transform: scale(1.2);
+    text-align: center;
+
+    transition: 3s ease-in;
+
  
 }
 
