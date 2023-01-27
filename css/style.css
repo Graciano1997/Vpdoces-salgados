@@ -31,6 +31,7 @@ main{
     grid-area: main;
     display: grid;
     grid-template-rows: 15%  repeat(4,auto);
+    margin-bottom: 25px;
 }
 
 /*Styling the carrocel
@@ -270,7 +271,9 @@ padding-bottom: 40px;
     align-items: center;
     justify-content: center;
 }
-.testemunho div{
+
+.testemunho div div{
+    
     width: 330px;
     height: 330px;
     color: black;
@@ -349,10 +352,11 @@ transform: rotateX(45deg);
     text-align: center;
 
 }
-    .testemunho div img{
-        width: 50%;
-        height: 50%;
-        padding: 12px;
-        border-radius:12%;
-        
-    }
+    
+#testemunho div img{
+
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
