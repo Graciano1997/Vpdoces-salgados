@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Usol de Gra_Soft"> 
-    <meta name=”VP doces e Salgados”/>
-    <link rel="stylesheet" href="css/style.css">
-    <title>VPdoces & salgados</title>
+    <meta name=”VP Doces & Salgados”/>
     <meta property="og:title" content="VP Doces & Salgados" >
     <meta property="og:type" content="website" >
     <meta property="og:image" content="logo.png" >
@@ -15,6 +13,9 @@
     <meta property="og:description" content="VP doces e Salgados é uma organização do ramo da pastelaria que produz diversos tipos de bolos e salgados, e dedica - se em atender a sua clientela. Levando as encomendas até ao cliente " >
     <meta property="og:locale" content="pt-pt">
     <meta property="og:site_name" content="VP Doces e Salgados">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>VPdoces & salgados</title>
 
 <body class="container">
 
@@ -33,33 +34,32 @@
     </ul>
     </nav>
 
-    <main>
-        <section class="carrocel">
-          
-                <img src="img/bolo-de-morango-11.jpeg" alt="">
-            <div class="legenda">
-            
-                
-                    <h1 id="bemvindo">SEJA BEM VINDO EM <span id="vpl" class="vpl">VP</span>doces & salgados</h1>
+    <main id="main">
 
-                
+        <section class="carrocel" id="carrocel">
+        <div class="imgdiv">
+            
+        <div class="tras"  >  <button onclick="back()" ><span id="tras" ><</span> </button> </div>    
+            <img src="img/carro/a1.webp" alt="" id="img">
+            <div class="frente">
+                <button onclick="avanca()" > <span id="frente">></span> </button>
             </div>
-        </section>
+        </div>
 
+            <div class="legenda">                
+                    <h1 id="bemvindo">SEJA BEM VINDO EM <span id="vpl" class="vpl">VP</span>doces & salgados</h1>    </div>
+        </section>
+        
         <section class="about" id="sobre">
-            
             <h1>SOBRE NÓS</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab accusamus consectetur, molestiae corrupti inventore illo tempora ipsa ea esse expedita ducimus nobis quis soluta perferendis. Provident modi vel sed tempore.
             </p>
-
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente assumenda quasi! Consectetur deleniti magnam ullam soluta aut iure voluptate, commodi eum totam esse a quos itaque? Accusantium, beatae culpa.
             </p>
                 </section>
-
-
-                <section class="about" id="missao">
+<section class="about" id="missao">
                     <h1>MiSSÃO</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab accusamus consectetur, molestiae corrupti inventore illo tempora ipsa ea esse expedita ducimus nobis quis soluta perferendis. Provident modi vel sed tempore.
@@ -197,9 +197,9 @@
                 
         </section>
 
-        <section class="testemunhos">
+        <section class="testemunhos" id="testemunhos">
             <div>
-                <h1 style="text-align: center; font-size: 25pt;">ALGUNS TESTEMUNHOS SOBRE NÓS  </h1>
+                <h1 style="text-align: center; font-size: 25pt;">O que Alguns Dizem :  </h1>
             </div>
             <div class="testemunho">
                 <div> 
@@ -240,13 +240,13 @@
 
     <footer>
     <div class="footer" id="footer">
-        <div class="logo">
+        <div class="logo" id="flogo">
             <p><a href="#header" style="text-decoration: none; color: #000;"><span id="vp">VP</span>doces & salgados</a> </p>
         </div>
         <div class="contato">
             <div>
                 <picture>
-                    <img src="img/contact/Facebook_64px.png" alt="">
+                    <img src="img/contact/facebook_641px.png" alt="">
                     <legend>Veronica Prata</legend>
                 </picture>
             
@@ -262,7 +262,7 @@
             </div>
             <div>
                 <picture>
-                    <a href="tel:+244935636086" >
+                    <a href="tel:+244946778613" >
                     
                     <img src="img/contact/phone_64px.png" alt="">
                     <legend>+244 946 778 613</legend>
@@ -281,5 +281,80 @@
     </div>    
     </footer>
     
+
+
+    
+    <script>
+        let n=0;
+   
+   
+           function back(){
+              
+   if(n>0){
+   
+               n--;
+               
+               if(n<=7){
+   
+   let key=document.getElementById("frente").style.visibility="visible";
+   
+   }
+   
+   
+   if(n<1){
+   
+   let key=document.getElementById("tras").style.visibility="hidden";
+   }else{
+   
+       if(n==4){
+           let key=document.getElementById("img").src="img/carro/a"+n+".jpeg";
+               console.log(n);
+       }else{
+           let key=document.getElementById("img").src="img/carro/a"+n+".jpg";
+               console.log(n);
+            }
+        
+       if(n==1){
+           let key=document.getElementById("img").src="img/carro/a"+n+".webp";
+               console.log(n);
+            }
+            
+       if(n==6){
+           let key=document.getElementById("img").src="img/carro/a"+n+".jpg";
+               console.log(n);
+            }
+        
+        }}}
+   
+   
+           function avanca(){
+               if(n<8){n++;
+               if(n<7){let key=document.getElementById("tras").style.visibility="visible";}
+               if(n>7){
+   
+                   let key=document.getElementById("frente").style.visibility="hidden";
+               }else{
+                
+       if(n==4){
+           let key=document.getElementById("img").src="img/carro/a"+n+".jpeg";
+               console.log(n);
+       }else{
+           let key=document.getElementById("img").src="img/carro/a"+n+".jpg";
+               console.log(n);
+            }
+        
+       if(n==1){
+           let key=document.getElementById("img").src="img/carro/a"+n+".webp";
+               console.log(n);
+            }
+            
+       if(n==6){
+           let key=document.getElementById("img").src="img/carro/a"+n+".jpg";
+               console.log(n);
+            }
+        
+        }
+                } }
+       </script>
 </body>
 </html>

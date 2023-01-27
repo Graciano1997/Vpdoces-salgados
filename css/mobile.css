@@ -1,0 +1,169 @@
+/*VERSAO MOBILE*/
+@media(max-width:703px){
+
+    /*Header*/
+    header{display: block; text-align: center;}
+    /*FIM Header*/
+    /*The mobile NAV*/
+    nav{display:block ;}
+    nav ul{    display: flex;padding-right:15px;flex-direction: column;}
+    
+    nav ul li:hover{ background-color: rgb(201, 186, 186); border-radius: 15px;}
+
+    #main{
+        display: flex;
+     flex-direction: column;   
+    }
+    .carrocel{
+        display: flex;
+    flex-direction: column;
+    }
+        .carrocel img{ width: 100%;height: 100%;}
+    
+
+        .legenda{
+            height: 50%;
+            width: 100%;
+        bottom: -98px;
+        background-color: black;
+        color: white;
+        }
+        .tras,.frente{
+            height: 100%;
+        }
+        .legenda h1{
+            margin-left: 7px;
+            color: white;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            font-size: 12pt;
+        }
+        
+#bemvindo{font-size: 25pt;}
+
+#vpl{ font-size:30pt;color: red;}
+
+#vpl:hover{font-size: 55px;}
+
+#sobre{
+    margin-top: 90px;
+}
+/*produto
+.produto{
+    display: grid;
+    margin-bottom: 40px;
+
+}*/
+
+
+#prod{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#prod div{
+    text-align: center;
+ 
+    background-color:rgba(226, 222, 223, 0.973);
+    
+    margin-bottom: 130px;
+}
+
+.prod div img{
+    
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.prod div:hover{ width: 350px;
+    width: 420px;
+    height: 420px;
+    margin: 8px;
+    border-radius: 15px;
+}
+
+/*fim produto*/
+
+
+/*KITS */
+
+
+#kititems{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#kititems div{
+    
+    background-color:#ff910094;
+    
+    margin-bottom: 140px;
+}
+
+
+#kititems div img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.email{
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+border-radius: 15px;
+}
+/*FIM KITS */
+
+
+
+
+#testemunhos{
+    margin: 12px;
+    display: block;
+}
+
+
+
+.testemunho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testemunho div{    
+    width: 330px;
+    height: 330px;
+    color: black;
+padding: 25px;
+margin: 50px;
+
+
+border-left: 4px solid red;
+
+}
+
+
+    /* Styling the footer*/
+    
+    #footer{
+    display: block;
+    }
+    
+#flogo{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+
+
+}
+
+    /*The end of MObile NAV*/
+
+/*FIM  MOBILE*/
