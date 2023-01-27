@@ -3,13 +3,57 @@
 
     /*Header*/
     #container{ }
-    header{display: block; text-align: center;}
+    header{display: block; }
+header{
+    animation: logomove 4s forwards ease-in-out;
+}
+
+@keyframes logomove {
+    from{
+       
+        transform: rotateZ(0);
+    color:tomato;
+    font-weight: bolder;
+    }
+
+    to{
+
+        
+        font-style: normal;
+    
+        background-color: white;
+        opacity: 0.7;
+        transform: skewY(20deg);
+        text-align:center ;
+    }
+    
+}
     /*FIM Header*/
     /*The mobile NAV*/
     nav{display:block ;}
     nav ul{    display: flex;padding-right:15px;flex-direction: column;}
-    
-    nav ul li:hover{ background-color: rgb(201, 186, 186); border-radius: 15px;}
+    nav ul li a:hover { text-decoration: none; font-size: 20px; color: black;  font-weight:bolder;
+        animation: lnk 2s forwards ease-in-out;
+        
+        }
+        
+    nav ul li:hover{  border-radius: 15px;
+    animation: lnk 2s forwards ease-in-out;}
+    @keyframes lnk {
+        from{
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        to{
+            background-color: rgb(201, 186, 186);
+            color: white;
+            font-weight: bold;
+            
+        }
+        
+    }
 
     #main{
         display: flex;
@@ -34,7 +78,8 @@
         overflow-x: hidden;
         }
         .tras,.frente{
-            height: 100%;
+         
+            border-radius: 50%;
         }
         .legenda h1{
             margin-left: 3px;
@@ -68,10 +113,11 @@
 #prod div{
     display: block; 
     margin-bottom: 20px;
-    width: 100%;
-    
+    width: 100%;    
     margin-top: 60px;
 align-items: center;
+transition: 3s ease-out;
+
 }
 
 #prod div img{    
@@ -86,13 +132,18 @@ align-items: center;
 
 
 #prod div:hover{ 
+   
     text-align: center;
     border-radius: 15px;
     margin-left: 5px;
     margin-right: 5px;
     padding-left: 5px;
+    transform: scale(1) rotate(6deg);
+
+    transition: 3s ease-in;
 
 }
+
 /*fim produto
 
 
