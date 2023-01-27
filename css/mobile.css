@@ -2,7 +2,12 @@
 @media screen and (max-width:768px){
 
     /*Header*/
-    header{display: block; text-align: center;}
+    header{
+        display: block;
+     text-align: center;   
+    width: 100%;
+}
+
     /*FIM Header*/
     /*The mobile NAV*/
     nav{display:block ;}
@@ -13,11 +18,14 @@
     #main{
         display: flex;
      flex-direction: column;   
+    width: 100%;
     }
     .carrocel{
         display: flex;
     flex-direction: column;
-    }
+    width: 100%;
+
+}
         .carrocel img{ width: 100%;height: 100%;}
     
 
