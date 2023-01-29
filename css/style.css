@@ -1,369 +1,58 @@
+@media (min-width:900px){
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Estonia&family=Hurricane&family=Roboto:wght@100;300&display=swap');
 /*RESET*/
-*{  
-    
-    font-family: 'Oxygen', sans-serif;
-    font-family: 'Hurricane', cursive;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Dancing Script', cursive;
-font-family: 'Roboto', sans-serif;
-    
-    font-weight: bold;
- 
-}
-
-
+*{font-family: 'Oxygen', sans-serif;}
   /*FIM RESET*/
-
-
-
 /* Styling the Body of Index*/
-.container{margin: 0em;display: grid;grid-template-rows:  repeat(4,auto);
-    
+body{
+    visibility: hidden;
+}
+.container{
+    display: grid;grid-template-rows:  repeat(4,auto);
 grid-template-areas: "header" "nav"  "main"  "footer";}
 
-header{padding: 12px;grid-area: header;background-color: white;   color: black; font-weight:bold ;
-animation: logoA 4s forwards ease-in-out;
-}
-header:hover{padding: 12px;grid-area: header;background-color: white;   color: black; font-weight:bold ;
-animation: logoA1 2s infinite ease-in-out;
-}
 
-
-
-@keyframes logoA1 {
-    from{
-        transform: rotateX(0);
-    color:tomato;
-    font-weight: bolder;
-    
-}
-
-    to{
-        transform:  rotateX(360deg); 
+.header{padding: 12px;grid-area: header;background-color: white;   color: black; font-weight:bold ;
+    animation: logoA 4s forwards ease-in-out;
     }
-}
-
-@keyframes logoA {
-    from{
-        transform: rotateY(0);
-    color:tomato;
-    font-weight: bolder;
+    .header:hover{padding: 12px;grid-area: header;background-color: white;   color: black; font-weight:bold ;
+    animation: logoA1 2s infinite ease-in-out;
     }
-
-    to{
-        font-style: normal;
-        opacity: 0.7;
-        transform:  rotateY(360deg); 
+    @keyframes logoA1 {
+        from{
+            transform: rotateX(0);
+        color:tomato;
+        font-weight: bolder;   
     }
-}
-
-
-/*Styling the Nav*/
-nav{     grid-area: nav;display: flex;justify-content: end;padding: 12px;background-color:white;}
-/*rgba(255, 145, 0, 0.185)*/
-nav ul{display: flex;padding-right: 5px;}
-
-nav ul li{padding: 12px;list-style-type: none;}
-nav ul li a {text-decoration: none; font-size: 18px; color:black; font-weight:bolder;}
-nav ul li a:hover { text-decoration: none; font-size: 20px; color:red; font-weight:bolder;
-text-decoration:underline;
-}
-
-
-/* end Styling the Nav*/
-
-
-/* Styling the MAIN*/
-main{ 
-    grid-area: main;
-    display: grid;
-    grid-template-rows: 15%  repeat(4,auto);
-    margin-bottom: 25px;
-}
-
-/*Styling the carrocel
-    justify-content: center;
-    padding:0.5px;
-    background-color:rgba(255, 0, 0, 0.521);
-
-*/
-
-.carrocel{
-    margin-top:5px;
-    position: relative;
+        to{ transform:  rotateX(360deg); }}
     
-
-    display: flex;
-flex-direction: row;
-width: 100%;
-justify-content: space-around;
-height: 80%;
-
-}
-.carrocel div img{ 
-
-    border-radius: 12px;    
-    
-         width: 100%; height: 80%;
-        
-        }
-
-         .imgdiv{
-            display:flex;
-        width: 100%; 
-        }
-
-    .carrocel div button{
-        
-        background-color: black;
-        font-size: 50pt;
-        font-weight: 900px;
-        
-        color: white;
+    @keyframes logoA {
+        from{
+            transform: rotateY(0);
+        color:tomato;
         font-weight: bolder;
-        height: 80%;
-        
-    border-radius: 12px;
         }
-
-        .carrocel div button{
-           
-            
-            animation: gra 10s infinite ease-in-out;
-        }
-            @keyframes gra{
-                from{
-                    background-color:white;
-                    color:black;
-                    }
-                to{
-                    background-color:black;
-                   color: red;
-                   }
-                }
-        
-        .frente{
-            
-            border-radius: 15px;
-        }
-
-
-.legenda{
-    height: 25%;
-    width: 100%;
-    position: absolute;  
-    bottom: 19%;
-    text-align: start;
-    background-color: rgba(0, 0, 0, 0.397);
-    opacity: 0.9;
-    color: white;
-}
-
-.legenda h1{
-    margin-left: 22px;
+        to{   font-style: normal;
+            opacity: 0.7;
+            transform:  rotateY(360deg); }}
     
-   font-family: 'Estonia', cursive;   font-size: 60pt;
-text-align: center;}
-
-/*Styling the carrocel*/
-#sobre{
-    margin-top: -250px;
-}
-
-.about{
-    margin: 28px;
-    text-align: justify;
-}
-
-.about p{
-    font-size: 16pt;
-    text-align: justify;
+    /*Styling the Nav*/
+    nav{     grid-area: nav;display: flex;justify-content: end;padding: 12px;background-color:white;}
+    /*rgba(255, 145, 0, 0.185)*/
+    nav ul{display: flex;padding-right: 5px;}
     
-}
-
-.about:hover{padding: 40px; border-left: 3px solid red;box-shadow: 2px 1px black;font-size: 18pt;
-border-radius: 15px;
-}
-
-.about h1{ font-size: 25pt;}
-
-.about h1:hover{font-size: 25pt;}
-
-.produto{
-    display: grid;
-    margin-bottom: 40px;
-
-}
-
-.prod{
-    display: flex;
-    flex-grow: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.prod div{
+    nav ul li{padding: 12px;list-style-type: none;}
+    nav ul li a {text-decoration: none; font-size: 18px; color:black; font-weight:bolder;}
+    nav ul li a:hover { text-decoration: none; font-size: 20px; color:red; font-weight:bolder;
+    text-decoration:underline;
+    }
     
-margin: 75px;
-    width: 350px;
-    height: 350px;
-    text-align: center;
     
-transition: 3s ease-out;
-}
-
-.prod div img{
+    /* end Styling the Nav*/
     
-    border-radius: 20px;
-    width: inherit;
-    height: inherit;
-}
-
-.prod div:hover{ width: 350px;
-    width: 400px;
-    height: 400px;
-    margin: 8px;
-    border-radius: 15px;
-    transform: scale(1.2);
-    text-align: center;
-
-    transition: 3s ease-in;
-
- 
-}
-
-
-.kititems{
-    display: flex;
-    flex-grow: auto;
-    
-    align-items: center;
-    justify-content: center;
-
-    padding-bottom: 50px;
-    
-}
-
-.kititems div{
-    background-color:#ff910094;
-    margin: 8px;
-}
-.kititems div h1{
-    text-align: center;
-}
-
-.kititems div img{
-    width: 100%;
-    height: 100%;
-}
-/*
-.kititems div:hover{ width: 350px;
-    width: 400px;
-    height: 400px;
-    margin: 8px;
-    border-radius: 15px;
-}
-*/
-
-.kits{
-    display: flex;
-    background-color: red;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-#kit{
-    font-size: 45pt;
-    color: red;
-}
-
-.kits div{
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
-}
-
-.email{
-    display: grid;
-justify-content: center;
-background-color:white;
-padding: 15px;
-border: 3px dashed black;
-margin-left: 3px;
-margin-right: 3px;
-margin-bottom: 50px;
-}
-#gra{
-    font-size: 28pt;
-    color: red;
-}
-
-.form{
-
-    display: flex;
-justify-content: center;    
-margin-bottom: 15px;
-}
-
-.form input,button{
-    font-size: 25px;
-    text-align: center;
-    margin: 2px;
-}
-
-.form input{
-    border-radius: 5px;    
-}
-
-.form button{
-    background-color: black;
-    color:white;
-    border-radius: 5px;
-}
-
-.testemunhos{
-    margin: 12px;
-    display: grid;
-padding-bottom: 40px;
-}
-
-
-
-.testemunho{
-    display: flex;
-    flex-grow: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.testemunho div div{
-    
-    width: 330px;
-    height: 330px;
-    color: black;
-padding: 25px;
-margin: 50px;
-
-
-border-left: 4px solid red;
-text-align: justify;
-
-}
-
-/* end Styling the MAIN*/
-
-
-
-
-
-
-
-
     /* Styling the footer*/
-footer{ 
+.footer{ 
     background-color: whitesmoke;
     grid-area: footer;
     padding: 12px;
@@ -413,17 +102,4 @@ transform: rotateX(45deg);
 
 .rights{text-align: center;} .rights p{font-weight: bold;}
     /* End Styling the footer*/
-
-    /*Testemunho*/
-.testemunho div{
-    text-align: center;
-
-}
-    
-#testemunho div img{
-
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
-    border: 1px solid black;
 }

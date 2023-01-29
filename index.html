@@ -8,12 +8,16 @@
     <meta name=”VP Doces & Salgados”/>
     <meta property="og:title" content="VP Doces & Salgados" >
     <meta property="og:type" content="website" >
+<<<<<<< HEAD
     <meta property="og:image" content="logo.jpg" >
+=======
+    <meta property="og:image" content="img/carro/a2.jpg" >
+>>>>>>> 1db6320 (resolvendo os problemas)
     <meta property="og:url" content="https://graciano1997.github.io/Vpdoces-salgados/" >
     <meta property="og:description" content="VP doces e Salgados é uma empreza de pastelaria que produz diversos tipos de bolos e salgados, e dedica - se em atender a sua clientela. Levando as encomendas até ao cliente " >
     <meta property="og:locale" content="pt-pt">
     <meta property="og:site_name" content="VP Doces e Salgados">
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +27,12 @@
 
 <body class="container" id="container">
 
-    <header id="header">
+    <header id="header" class="header" >
 
         <p><span class="vpl">VP</span>doces & salgados</p>
     </header>
 
-    <nav>
+    <nav id="nav">
     <ul>
        <li><a href="#sobre">Sobre Nós</a></li>
        <li><a href="#missao">Nossa Missão</a></li>
@@ -37,23 +41,23 @@
        <li><a href="#foot">Fala conosco</a></li>
     </ul>
     </nav>
+    <main>
 
-    <main id="main">
+        <section class="carrocel" id="carrocel" >
+            <div >
+                
+            <div>
 
-        <section class="carrocel" id="carrocel">
-        <div class="imgdiv">
-            
-        <div class="tras"  >  <button onclick="back()" ><span id="tras" ><</span> </button> </div>    
-            <img src="img/carro/a1.webp" alt="" id="img">
-            <div class="frente">
-                <button onclick="avanca()" > <span id="frente">></span> </button>
+                <img src="img/carro/a2.jpg" alt="" id="img">
             </div>
-        </div>
+            </div>
+     
+                <div class="legenda">                
+                        <h1 id="bemvindo">SEJA BEM VINDO EM <span id="vpl" class="vpl">VP</span>doces & salgados</h1>    </div>
+            </section>
+       
 
-            <div class="legenda">                
-                    <h1 id="bemvindo">SEJA BEM VINDO EM <span id="vpl" class="vpl">VP</span>doces & salgados</h1>    </div>
-        </section>
-        
+
         <section class="about" id="sobre">
             <h1>SOBRE NÓS</h1>
             <p>
@@ -63,7 +67,7 @@
             <p>
                 Todos os nossos produtos são feitos com ingredientes de alta qualidade e são preparados diariamente para garantir a frescura.
 
-                Temos uma equipe de pasteleiros altamente qualificados e experientes que trabalham duro para criar deliciosas sobremesas para nossos clientes. Além disso, oferecemos opções de personalização para atender às necessidades específicas de nossos clientes, como bolos de aniversário, bolos de casamento e outros eventos especiais.
+                Temos uma equipe de pasteleiros altamente qualificados e experientes que trabalham duro para criar deliciosas sobremesas para nossos clientes. Além disso, oferecemos opções de personalização de modo atender às necessidades específicas de nossos clientes, como bolos de aniversário, bolos de casamento e outros eventos especiais.
                 
             </p>
                 <p>
@@ -71,7 +75,7 @@
                 
                 Nós convidamos você a visitar a nossa loja e experimentar nossos deliciosos produtos de pastelaria.
             </p>
-            <h2 style="text-align: center; font-family: 'Estonia', cursive;    font-size: 70pt; ">Obrigado por escolher a nossa empresa de pastelaria</h2>
+            <h2 id="destaque">Obrigado por escolher a nossa empresa de pastelaria</h2>
                 </section>
 <section class="about" id="missao">
                     <h1>MiSSÃO</h1>
@@ -119,132 +123,138 @@ Em resumo, a missão da nossa empresa de pastelaria é criar momentos especiais 
                            
                         </p>
                         <p>
-                            <h2 style="text-align: center; font-family: 'Estonia', cursive;    font-size: 35pt; color:red">
+                            <h2 id="destaquevisao">
 
                                 Muito obrigado por sua atenção. Estamos ansiosos para servir vocês e mostrar por que somos a melhor escolha para suas necessidades de pastelaria.
                             </h2>
                     </p>
                         </section>
-                        
         
+
 
         <section class="produto" id="produtoss">
+
+            
+            <div>
+                <h2 id="doce" >Nossos Bolos e Doces</h2>
+            </div>
+            <div class="prod" id="prod">
+                
                 <div>
-                    <h2 style="text-align: center; font-family: 'Estonia', cursive;    font-size: 70pt; ">Nossos Bolos e Doces</h2>
+                    <h3>Floresta Negra</h3>
+            
+                    <img src="img/bolo-floresta-negra.png" alt="">
+                    <h4><strong>AOA 10.000</strong> </h4>
                 </div>
-                <div class="prod" id="prod">
-                    
-                    <div>
-                        <h3>Floresta Negra</h3>
-                
-                        <img src="img/bolo-floresta-negra.png" alt="">
-                        <h4><strong>AOA 10.000</strong> </h4>
-                    </div>
 
-                    <div>
-                        <h3>Bolo-de-chocolate-fleischmann</h3>
-                
-                        <img src="img/Bolo-de-chocolate-fleischmann-1200x800.jpg" alt="">
-                        <h4><strong>AOA 10.000</strong> </h4>
-                    </div>
+                <div>
+                    <h3>Bolo-de-chocolate-fleischmann</h3>
+            
+                    <img src="img/Bolo-de-chocolate-fleischmann-1200x800.jpg" alt="">
+                    <h4><strong>AOA 10.000</strong> </h4>
+                </div>
 
-                    <div>
-                        <h3>Bolo de Morango</h3>
+                <div>
+                    <h3>Bolo de Morango</h3>
+            
+                    <img src="img/bolomorango.jpg" alt="">
+                    <h4><strong>AOA 10.000</strong> </h4>
+            
+                </div>
                 
-                        <img src="img/bolomorango.jpg" alt="">
-                        <h4><strong>AOA 10.000</strong> </h4>
+                <div>
+                    <h3>Bolo de Brgadero com Morango</h3>
+                    <img src="img/bolo-de-brigadeiro-com-morango-decoração-1200x931.jpg" alt="">
                 
-                    </div>
-                    
-                    <div>
-                        <h3>Bolo de Brgadero com Morango</h3>
-                        <img src="img/bolo-de-brigadeiro-com-morango-decoração-1200x931.jpg" alt="">
-                    
-                        <h4><strong>AOA 10.000</strong> </h4>
-                    </div>
-                    <div>
-                        <h3>Bolo de Morango</h3>
-                        <img src="img/bolo-de-morango-11.jpeg" alt="">
-                        <h4><strong>AOA 10.000</strong> </h4>
-                    </div>
+                    <h4><strong>AOA 10.000</strong> </h4>
+                </div>
+                <div>
+                    <h3>Bolo de Morango</h3>
+                    <img src="img/bolo-de-morango-11.jpeg" alt="">
+                    <h4><strong>AOA 10.000</strong> </h4>
+                </div>
 
+                <div>
+                    <h3>Bolo de Morango com Chocolate</h3>
+                    <img src="img/morango-com-chocolate-preto.jpg" alt="">
+                    
+                    <h4><strong>AOA 10.000</strong> </h4>
+                </div>
                     <div>
-                        <h3>Bolo de Morango com Chocolate</h3>
-                        <img src="img/morango-com-chocolate-preto.jpg" alt="">
-                        
+                        <h3>Obra de Veronica</h3>
+                        <img src="img/vp.jpg" alt="">
                         <h4><strong>AOA 10.000</strong> </h4>
                     </div>
-                        <div>
-                            <h3>Obra de Veronica</h3>
-                            <img src="img/vp.jpg" alt="">
-                            <h4><strong>AOA 10.000</strong> </h4>
-                        </div>
-                        <div>
-                            <h3>Obra de Veronica</h3>
-                            <img src="img/fofo.jpg" alt="">
-                            <h4><strong>AOA 10.000</strong> </h4>
-                        </div>
+                    <div>
+                        <h3>Obra de Veronica</h3>
+                        <img src="img/fofo.jpg" alt="">
+                        <h4><strong>AOA 10.000</strong> </h4>
+                    </div>
+                
+            </div>
+
+            <br>
+            <br>
+
+            <h2 id="sal">
+                Nossos <span id="kit" >SALGADOS</span> 
+            </h2>
+
+            <div class="kititems" id="kititems">
+                <div>
+                    <h1>Bolas de Berlim</h1>
+                    <img src="img/BOLAS_BERLIM.jpg" alt="">
+                    <h1 id="pre">Preço: 5000 AKZ</h1>
+                </div>    
+                <div>
+                      <h1>Coxinhas</h1>
+                    <img src="img/coxinha-de-frango-40-gramas-10-unidades-salgados.jpg" alt="">
+                    <h1>Preço: 5000 AKZ</h1>
+                </div>
+
+                <div>
+                      <h1>Coxinhas</h1>
+                    <img src="img/Como-fazer-salgados-congelados-para-vender-1.jpg" alt="">
+                    <h1>Preço: 5000 AKZ</h1>
                     
                 </div>
-                <br>
-                <hr>
-                <h2 style="text-align: center; font-family: 'Estonia', cursive;    font-size: 70pt;">
-                    Nossos <span id="kit" style="text-align: center; font-family: 'Estonia', cursive;    font-size: 70pt;">SALGADOS</span> 
-                </h2>
-
-                <div class="kititems" id="kititems">
-                    <div>
-                        <h1>Bolas de Berlim</h1>
-                        <img src="img/BOLAS_BERLIM.jpg" alt="">
-                        <h1 id="pre">Preço: 5000 AKZ</h1>
-                    </div>    
-                    <div>
-                          <h1>Coxinhas</h1>
-                        <img src="img/coxinha-de-frango-40-gramas-10-unidades-salgados.jpg" alt="">
-                        <h1>Preço: 5000 AKZ</h1>
-                    </div>
-
-                    <div>
-                          <h1>Coxinhas</h1>
-                        <img src="img/Como-fazer-salgados-congelados-para-vender-1.jpg" alt="">
-                        <h1>Preço: 5000 AKZ</h1>
-                        
-                    </div>
-                    
-                  </div>
                 
+              </div>
+            
 
 
-        </section>
+    </section>
 
-        
+
+
         <section class="email">
-<h1>
-    <span id="vpe">VP</span>doces & salgados quer deixa - lo atualizado sobre nossos maravilhos <span id="gra">Doces</span> e <span id="gra">Salgados</span>!
-</h1>
-<p>
-    Escreva o seu Email na caixa abaixo e clique no botão enviar!
-</p>
-    
-
-<form action="" class="form" >
-                <div>
-                    <input type="email" name="email" id="mail" placeholder="Escreva o seu email">
-                </div>
+            <h3>
+                <span id="vpe">VP</span>doces & salgados quer deixa - lo atualizado sobre nossos maravilhos <span id="gra">Doces</span> e <span id="gra">Salgados</span>!
+            </h3>
+            <p>
+                Escreva o seu Email na caixa abaixo e clique no botão enviar!
+            </p>
                 
-                <div>
-                    <button type="submit" onclick="alert('Brevemente Disponivel -- contactar o prog. Gra_Soft')">
-                        Enviar
-                        
-                    </button>
-                </div>
-                </form>
-                
-        </section>
-
+            
+            <form action="" class="form" >
+                            <div>
+                                <input type="email" name="email" id="mail" placeholder="Escreva o seu email">
+                            </div>
+                            
+                            <div>
+                                <button type="submit" onclick="alert('Brevemente Disponivel -- contactar o prog. Gra_Soft')">
+                                    Enviar
+                                    
+                                </button>
+                            </div>
+                            </form>
+                            
+                    </section>
+            
+            
         <section class="testemunhos" id="testemunhos">
             <div>
-                <h1 style="text-align: center; font-size: 25pt;">O que Alguns Dizem :  </h1>
+                <h1 style="text-align: center; font-size: 25pt;">O que Alguns Dizem </h1>
             </div>
             <div class="testemunho" id="testemunho">
                 <div> 
@@ -290,52 +300,52 @@ Em resumo, a missão da nossa empresa de pastelaria é criar momentos especiais 
                 </div>
                                 </div>
         </section>
-
     </main>
 
-    <footer>
-    <div class="footer" id="foot">
-        <div class="logo" id="flogo">
-            <p><a href="#header" style="text-decoration: none; color: #000;"><span id="vp">VP</span>doces & salgados</a> </p>
-        </div>
-        <div class="contato">
-            <div>
-                <picture>
-                    <img src="img/contact/facebook_641px.png" alt="">
-                    <legend>Veronica Prata</legend>
-                </picture>
-            
-            </div>
-            <div>
-                <picture>
-                    <a href="https://wa.me/244946778613" target="_blank" >
-                    <img src="img/contact/whatsapp_64px.png" alt="">
-                    <legend>+244 946 778 613</legend>
-                </a>
-                </picture>
-            
-            </div>
-            <div>
-                <picture>
-                    <a href="tel:+244946778613" >
-                    
-                    <img src="img/contact/phone_64px.png" alt="">
-                    <legend>+244 946 778 613</legend>
-                </a>
-                </picture>
-            
-            </div>
-        </div>
-    
-    </div>
-    <hr>
 
-    <div class="rights">
-    <p>Todos os Direitos Reservados de <span id="vpf">VP</span>doces & salgados</p>
-    <p>Desenvolvido por USOL de Gra_Soft </p>    
-    </div>    
-    </footer>
+
+    <footer class="foote">
+        <div class="footer" id="foot">
+            <div class="logo" id="flogo">
+                <p><a href="#header" style="text-decoration: none; color: #000;"><span id="vp">VP</span>doces & salgados</a> </p>
+            </div>
+            <div class="contato">
+                <div>
+                    <picture>
+                        <img src="img/contact/facebook_641px.png" alt="">
+                        <legend>Veronica Prata</legend>
+                    </picture>
+                
+                </div>
+                <div>
+                    <picture>
+                        <a href="https://wa.me/244946778613" target="_blank" >
+                        <img src="img/contact/whatsapp_64px.png" alt="">
+                        <legend>+244 946 778 613</legend>
+                    </a>
+                    </picture>
+                
+                </div>
+                <div>
+                    <picture>
+                        <a href="tel:+244946778613" >
+                        
+                        <img src="img/contact/phone_64px.png" alt="">
+                        <legend>+244 946 778 613</legend>
+                    </a>
+                    </picture>
+                
+                </div>
+            </div>
+        
+        </div>
+        <hr>
     
+        <div class="rights">
+        <p>Todos os Direitos Reservados de <span id="vpf">VP</span>doces & salgados</p>
+        <p>Desenvolvido por USOL de Gra_Soft </p>    
+        </div>    
+        </footer>  
 
 <script src="css/bootstrap.min.js"></script>
     

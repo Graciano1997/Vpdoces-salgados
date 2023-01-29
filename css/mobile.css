@@ -1,17 +1,18 @@
 /*VERSAO MOBILE*/
-@media(max-width:715px){
+@media(max-width:512px){
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Estonia&family=Hurricane&family=Roboto:wght@100;300&display=swap');
+
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Hind+Siliguri:wght@300&display=swap');
     /*Header*/
 
     .container{
-        display: grid;grid-template-rows:  repeat(4,auto);
+        display:flex;
+        flex-direction: column;
+        font-family: 'Oxygen', sans-serif;
     
-        grid-template-areas: "header" "nav"  "main"  "footer";}
+    }
 
-    header{display: block; }
-header{
-    animation: logomove 4s forwards ease-in-out;
-}
+    #header{ animation: logomove 4s forwards ease-in-out; }
 
 @keyframes logomove {
     from{
@@ -35,15 +36,24 @@ header{
 }
     /*FIM Header*/
     /*The mobile NAV*/
-    nav{display:block ;}
-    nav ul{    display: flex;padding-right:15px;flex-direction: column;}
-    nav ul li a:hover { text-decoration: none; font-size: 20px; color: black;  font-weight:bolder;
+   #nav ul{
+   } 
+    #nav ul li{padding: 8px;list-style-type: none;}
+
+    #nav ul{    display: flex;padding-right:15px;flex-direction: column;}
+    #nav ul   { text-decoration: none; font-size: 20px; color: black;  font-weight:bolder;}
+
+    #nav ul li a { text-decoration: none;  color: black; }
+    #nav ul li a:hover { text-decoration: none; font-size: 16px; color: black;  font-weight:bolder;
         animation: lnk 2s forwards ease-in-out;
+        
         
         }
         
-    nav ul li:hover{  border-radius: 15px;
-    animation: lnk 2s forwards ease-in-out;}
+    #nav ul li:hover{  border-radius: 15px;
+    animation: lnk 2s forwards ease-in-out;
+
+    font-family: 'Estonia', cursive;}
     @keyframes lnk {
         from{
             background-color: white;
@@ -61,23 +71,43 @@ header{
     }
 
     #main{
-        display: flex;
-     flex-direction: column;   
-     margin-bottom: 34px;
+        margin-bottom: 34px;
     
     }
+
+    
+#carrocel{
+      margin-top:5px;
+    
+
+width: 100%;
+
+height: 80%;
+
+}
+#carrocel div img {
+    border-radius: 15px;
+ }
+#carrocel div { 
+    display: flex;
+flex-direction: column;
+
+        }
+
+
     
     
 
         .legenda{
             margin-left: 2px;
             height: 50%;
-            width: 100%;
         bottom: -98px;
         background-color: black;
         color: white;
         width: 100%;
         overflow-x: hidden;
+        
+    border-radius: 5px;
         }
         .tras,.frente{
          
@@ -86,27 +116,33 @@ header{
         .legenda h1{
             margin-left: 3px;
             color: white;
-            font-family: 'Estonia', cursive;   
-               font-size: 20pt;
+            font-family: 'Oxygen', sans-serif;
+            font-size: 20pt;
         }
         
-#bemvindo{font-size: 20pt;}
+#bemvindo{font-size: 20pt;text-align: center;}
 
 #vpl{ font-size:30pt;color: red;}
 
 #vpl:hover{font-size: 55px;}
 
-#sobre{
+#sobre,#missao,#visao{
     margin-top: 150px;
+   
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-justify: auto;
 }
 
 .about{
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
 }
 
-
+#destaque{ text-align: center; font-family: 'Estonia', cursive;    font-size: 25pt; color: red;}
+#destaquevisao{ text-align: center; font-family: 'Estonia', cursive;    font-size: 15pt; color: red;}
 .about p{
     font-size: 14pt;
     text-align: justify;
@@ -126,8 +162,10 @@ header{
     margin-bottom: 20px;
     width: 100%;    
     margin-top: 60px;
-align-items: center;
-transition: 3s ease-out;
+    font-family: 'Oxygen', sans-serif;
+   
+text-align: center;
+transition: 2s ease-out;
 
 }
 
@@ -142,16 +180,16 @@ transition: 3s ease-out;
 }
 
 
-#prod div:hover{ 
+#prod div:hover img{ 
    
     text-align: center;
     border-radius: 15px;
     margin-left: 5px;
     margin-right: 5px;
     padding-left: 5px;
-    transform: scale(1) rotate(6deg);
+    transform: scale(1.04) rotate(6deg);
 
-    transition: 3s ease-in;
+    transition: 2s ease-in;
 
 }
 
@@ -179,26 +217,83 @@ transition: 3s ease-out;
     background-color:#ff910094;
     
     margin-bottom: 140px;
+    font-family: 'Estonia', cursive;
 }
 
-
+#kititems h1{
+    text-align: center;
+}
 #kititems div img{
     width: 100%;
     height: 100%;
     
 }
 
+#sal{text-align: center; font-family: 'Estonia', cursive;    font-size: 30pt;}
 
-
+#doce{text-align: center; font-family: 'Estonia', cursive;    font-size: 30pt;}
+#kit{
+    text-align: center; font-family: 'Estonia', cursive;    font-size: 30pt;
+    color: red;
+}
 .email{
     margin-top: 40px;
     margin-left: 5px;
     margin-right: 5px;
 border-radius: 15px;
+font-family: 'Oxygen', sans-serif;
+   
 }
 /*FIM KITS */
 
+.email{
 
+background-color:white;
+padding: 15px;
+border: 3px dashed black;
+margin-left: 3px;
+margin-right: 3px;
+margin-bottom: 50px;
+}
+
+#vpe{ font-size:13pt;color: red;}
+
+#gra{
+    font-size: 15pt;
+    color: red;
+}
+
+
+.form{
+
+    display: flex;
+justify-content: center;    
+margin-bottom: 15px;
+}
+
+.form input,button{
+    font-size: 15px;
+    text-align: center;
+    margin: 2px;
+}
+
+.form input{
+    border-radius: 5px;    
+}
+
+.form button{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+}
+
+
+
+#testemunho{
+ text-align: center;
+ font-family: 'Oxygen', sans-serif;
+   
+}
 
 
 #testemunhos{
@@ -228,8 +323,8 @@ border-left: 2px solid red;
 
     /* Styling the footer*/
     #foot{
-    display: flex;
-    flex-direction: column;
+        width: 100%;
+        
     }
     
 #flogo{
@@ -237,7 +332,48 @@ border-left: 2px solid red;
     margin-bottom: 12px;
 }
 
+.contato{display: flex;}
 
+
+    /* Styling the footer*/
+    .foote{ 
+        width: 100%;
+       
+        background-color: whitesmoke;
+      }
+    
+    
+    .logo{text-align: start;font-size: 16pt;}
+    .logo p{ font-weight: bold;}
+    #vp{ font-size:50pt;color: red;}
+    .vpl{ font-size:60pt;color: red;}
+    #vpe{ font-size:30pt;color: red;}
+    
+    #vpl{
+         color: red; 
+    animation: logoanima 3s infinite ease-in-out;
+    }
+    
+    
+    
+    .contato div{ align-items: center;text-align: center;}
+    
+    .contato a{text-decoration: none;color: black;font-size: 14pt;}
+    
+    .contato a:active{
+        text-decoration: none;color: black;font-size: 8pt;
+        text-decoration: none;
+    }
+    .contato a:visited{
+        text-decoration: none;color: black;font-size: 14pt;
+        }
+    
+    
+    .rights{text-align: center;} .rights p{font-weight: bold;}
+        /* End Styling the footer*/
+        
+#vpf{  font-size:20pt; color: red;}
+    
 
 }
 
