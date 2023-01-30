@@ -71,7 +71,7 @@
     }
 
     #main{
-        margin-bottom: 34px;
+        margin-bottom: 80px;
     
     }
 
@@ -127,7 +127,7 @@ flex-direction: column;
 #vpl:hover{font-size: 55px;}
 
 #sobre,#missao,#visao{
-    margin-top: 150px;
+    margin-top: 90px;
    
     font-family: 'Oxygen', sans-serif;
     text-align: center;
@@ -135,10 +135,47 @@ flex-direction: column;
     text-justify: auto;
 }
 
+#sobre p {margin: 15px;  
+    border: 2px solid red;
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+   
+    
+
+    background-color: white;
+}
+
+#missao p {margin: 15px;  
+    border: 2px solid black;
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+   
+    
+
+    background-color: whitesmoke;
+}
+
+
+#visao p {margin: 15px;  
+    border: 2px solid black;
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+   
+    
+
+    background-color:rgba(255, 99, 71, 0.267);
+}
 .about{
     font-family: 'Oxygen', sans-serif;
     font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #destaque{ text-align: center; font-family: 'Estonia', cursive;    font-size: 25pt; color: red;}
