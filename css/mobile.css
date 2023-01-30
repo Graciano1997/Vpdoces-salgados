@@ -369,7 +369,9 @@ border-left: 2px solid red;
     margin-bottom: 12px;
 }
 
-.contato{display: flex;}
+.contato{display: flex;
+justify-content: space-around;
+}
 
 
     /* Styling the footer*/
